@@ -19,7 +19,7 @@ st.markdown("""
     .stButton button:hover {background-color: #2ecc71;}
     .recommendation-card {background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px;}
     .dark-card {background-color: #1e1e1e; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; color: white;}
-    .dark-card h3 {color: #4ecca3;}
+    .dark-card h3 {color: white;}
     .header-container {display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;}
     .emoji-icon {font-size: 40px; margin-right: 20px;}
     .health-icons {display: flex; justify-content: space-around; margin: 30px 0;}
@@ -383,17 +383,17 @@ def main():
     with tab3:
         st.markdown("## About Nutrifit AI")
         
-        st.markdown("""<div class='recommendation-card'>
+        st.markdown("""<div class='dark-card'>
             <h3>Our Mission</h3>
             <p>Nutrifit AI is dedicated to making personalized nutrition accessible to everyone. We believe that proper diet is fundamental to good health and wellbeing.</p>
         </div>""", unsafe_allow_html=True)
         
-        st.markdown("""<div class='recommendation-card'>
+        st.markdown("""<div class='dark-card'>
             <h3>Our Team</h3>
             <p>Our team consists of nutritionists, developers, and AI experts committed to creating the most effective diet recommendation system.</p>
         </div>""", unsafe_allow_html=True)
         
-        st.markdown("""<div class='recommendation-card'>
+        st.markdown("""<div class='dark-card'>
             <h3>Contact Us</h3>
             <p>For any questions or feedback, please contact us at support@nutrifit.ai</p>
         </div>""", unsafe_allow_html=True)
