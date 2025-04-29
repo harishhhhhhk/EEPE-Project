@@ -18,6 +18,8 @@ st.markdown("""
     .stButton button {background-color: #27ae60; color: white; border-radius: 5px; padding: 0.5rem 1rem;}
     .stButton button:hover {background-color: #2ecc71;}
     .recommendation-card {background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px;}
+    .dark-card {background-color: #1e1e1e; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; color: white;}
+    .dark-card h3 {color: #4ecca3;}
     .header-container {display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;}
     .emoji-icon {font-size: 40px; margin-right: 20px;}
     .health-icons {display: flex; justify-content: space-around; margin: 30px 0;}
@@ -363,17 +365,17 @@ def main():
     with tab2:
         st.markdown("## How Nutrifit AI Works")
         
-        st.markdown("""<div class='recommendation-card'>
+        st.markdown("""<div class='dark-card'>
             <h3>🧠 Personalized AI Analysis</h3>
             <p>Our advanced AI system analyzes your unique health profile, including existing health conditions, dietary preferences, and wellness goals.</p>
         </div>""", unsafe_allow_html=True)
         
-        st.markdown("""<div class='recommendation-card'>
+        st.markdown("""<div class='dark-card'>
             <h3>📊 Evidence-Based Recommendations</h3>
             <p>Your diet plan is created using the latest nutritional science and medical research, customized to address your specific health needs.</p>
         </div>""", unsafe_allow_html=True)
         
-        st.markdown("""<div class='recommendation-card'>
+        st.markdown("""<div class='dark-card'>
             <h3>🔄 Continuous Improvement</h3>
             <p>As you provide feedback and update your health information, our AI system refines your recommendations for even better results over time.</p>
         </div>""", unsafe_allow_html=True)
